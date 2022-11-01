@@ -1,0 +1,211 @@
+/* albert-sans-500 - latin */
+@font-face {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/albert-sans-v1-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/albert-sans-v1-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #070707;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* header style start */
+
+.menu {
+    padding-top: 25px;
+    font-weight: bold;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #828282;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_link {
+    line-height: 23px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.menu a:hover, .menu a:focus, .menu a:active {
+    color: #070707;
+    transform: scale(1.2);
+}
+
+/* header style end */
+
+/* inro style start */
+
+.info {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.name {
+    width: 120px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px
+}
+
+.micro-info {
+    width: 165px;
+    line-height: 20px;
+}
+
+.lang {
+    font-size: 16px;
+    font-weight: bold;
+    color: #828282;
+    transform: translate(26px, -30px) rotate(-90deg);
+}
+
+.photo_1 {
+    width: 100%;
+    height: 390px;
+    padding-top: 45px;
+}
+
+.photo {
+    padding-bottom: 70px;
+}
+/* inro style end */
+
+/* about style start */
+
+.about {
+    background-color: #F6F6F6;
+}
+
+.about_me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.text {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about style end */
+
+/* skill style start */
+
+.skills {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+    padding-left: 100px;
+}
+
+.box:first-child {
+    padding-left: 0;
+}
+
+.box_icon img {
+    width: 90px;
+    height: 90px;
+}
+
+.box_name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+
+.box_stars {
+    display: flex;
+    justify-content: space-between;
+    width: 166px;
+}
+/* skill style end */
+
+/* portfolio style start */
+
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.example {
+    width: 1000px;
+    height: 600px;
+}
+
+.portfolio_block {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 2500px;
+}
+
+.portfolio_content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio_content_name {
+    padding-top: 40px;
+}
+
+/* portfolio style end */
