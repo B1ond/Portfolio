@@ -87,6 +87,11 @@ body {
     font-weight: bold;
     color: #828282;
     transform: translate(26px, -30px) rotate(-90deg);
+    cursor: pointer;
+}
+
+.lang_click:hover, .lang_click:focus, .lang_click:active {
+    color: #070707;
 }
 
 .photo_1 {
@@ -209,3 +214,37 @@ body {
 }
 
 /* portfolio style end */
+
+/* footer style start */
+
+footer {
+    padding-top: 43px;
+    padding-bottom: 120px;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_social {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 290px;
+}
+
+.footer_link {
+    cursor: not-allowed;
+}
+
+.footer_img {
+    width: 45px;
+    height: 45px;
+}
+
+.footer_title {
+    margin: 50px;
+}
+/* footer style end */
