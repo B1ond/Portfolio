@@ -32,6 +32,8 @@ body {
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* header style start */
@@ -194,14 +196,14 @@ header {
 
 .portfolio_block {
     padding-top: 120px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 2500px;
+    height: 100%;
 }
 
 .portfolio_content {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -235,7 +237,7 @@ footer {
 }
 
 .footer_link {
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .footer_img {
@@ -250,7 +252,7 @@ footer {
 
 /* media style start */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
     .example_1 {
         max-width: 100%;
     }
@@ -259,6 +261,85 @@ footer {
     }
     .example_3 {
         max-width: 100%;
+    }
+    .photo_1 {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .example_1 {
+        max-width: 100%;
+    }
+    .example_2 {
+        max-width: 100%;
+    }
+    .example_3 {
+        max-width: 100%;
+    }
+    .photo_1 {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .example_1 {
+        max-width: 100%;
+    }
+    .example_2 {
+        max-width: 100%;
+    }
+    .example_3 {
+        max-width: 100%;
+    }
+    .skills {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 100%;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+    .box {
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .portfolio_block {
+        padding-top: 50px;
+    }
+    .footer_title {
+        margin: 25px;
+    }
+    footer {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .photo_1 {
+        height: 200px;
+    }
+    .about_me {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        height: 100%;
+    }
+    .footer_img {
+        width: 35px;
+        height: 35px;
+    }
+    .footer_social {
+        max-width: 225px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 15px;
+    }
+    .photo_1 {
+        height: 160px;
     }
 }
 
